@@ -1,0 +1,17 @@
+{
+  "name": "starter-webapp",
+  "version": "1.0",
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "bourbon": "^4.2.6",
+    "neat": "^1.7.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}

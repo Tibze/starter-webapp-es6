@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    @extend %full-size;
+    -webkit-overflow-scrolling: touch;
+
+    &.overflow-hidden{
+        overflow: hidden;
+    }
+}
+
+body {
+    color: #000;
+    background: #FFF;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+a {
+    color: #303F9F;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    text-align:center;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

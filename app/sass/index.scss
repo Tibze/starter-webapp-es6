@@ -1,0 +1,31 @@
+@import 'grid-settings';
+
+@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+@import "base/normalize";
+@import "base/fonts";
+@import "base/colors";
+@import "base/variables";
+@import "base/breakpoints";
+
+@import "base/base";
+
+.wrapper {
+	@include outer-container;
+}
+
+.dummy-content {
+	@include span-columns(12);
+}
+
+.dummy-tips {
+	margin-top:40px;
+	text-align:center;
+	@include span-columns(4);
+
+	@include mobile-landscape-and-below {
+		@include span-columns(12);
+	}
+
+}
